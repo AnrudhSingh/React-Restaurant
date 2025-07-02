@@ -1,0 +1,35 @@
+.footer-links .nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.footer-social .nav-link {
+    min-width: 32px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--bs-tertiary);
+}
+
+.footer-social .nav-link svg {
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+    fill: var(--bs-white);
+}
+
+.footer-links .nav-link {
+    color: var(--bs-description);
+    font-size: 1rem;
+}
+
+.footer-links .nav-link:hover,
+.footer-links .nav-link:focus,
+.footer-links .nav-link.active {
+    color: var(--bs-primary);
+}
+
+@media (min-width:1200px) {
+
+    .footer-links .nav-link {
+        font-size: 1.25rem;
+    }
+}
