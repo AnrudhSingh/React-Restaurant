@@ -4,19 +4,12 @@ import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import ProductSlider from '../component/ProductSlider';
 import Footer from '../component/Footer';
-
-const ShopHero = () => (
-  <section className="bg-primary bg-gradient py-5 mb-4">
-    <Container>
-      <Breadcrumb className="mb-3">
-        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-        <Breadcrumb.Item active>Shop</Breadcrumb.Item>
-      </Breadcrumb>
-      <h1 className="display-4 text-white fw-bold mb-2">Shop</h1>
-    </Container>
-  </section>
-);
-
+import InnerHero from "../component/InnerHero";
+import HeroBanner from '../assets/shop_emanuel_ekstrom.jpg';
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Shop" }
+];
 const Shop = () => {
   const products = [
     {
@@ -88,9 +81,11 @@ const Shop = () => {
   return (
     <>
       <Title title="Shop" />
-      <PageTitle 
-        title="Our Shop" 
-        subtitle="Browse our selection of premium ingredients and cooking essentials"
+      <InnerHero
+        backgroundImage={HeroBanner}
+        title="Shop"
+        description="Browse our shop for tasty treats, kitchen essentials, and more. Quality ingredients and food products delivered fresh to your door—shop now!"
+        breadcrumbItems={breadcrumbItems}
       />
       <section className="bg-primary section-spacing section-product position-relative">
         <Container fluid className='position-relative z-1'>

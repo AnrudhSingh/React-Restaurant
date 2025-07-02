@@ -3,18 +3,20 @@ import { Container, Breadcrumb } from 'react-bootstrap';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
-
+import InnerHero from "../component/InnerHero";
+import HeroBanner from '../assets/contact_anima_visual.jpg';
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Contact Us" }
+];
 const Contact = () => (
   <>
-    <section className="section-spacing bg-dark">
-      <Container>
-        <Breadcrumb className="mb-3">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item active>Contact Us</Breadcrumb.Item>
-        </Breadcrumb>
-        <h1 className="display-4 text-white fw-bold mb-2">Contact Us</h1>
-      </Container>
-    </section>
+  <InnerHero
+      backgroundImage={HeroBanner}
+      title="Contact Us"
+      description="Have questions or feedback? We'd love to hear from you! Reach out for orders, support, or just to say hi — we're always here to help."
+      breadcrumbItems={breadcrumbItems}
+    />
     <Footer />
   </>
 );

@@ -11,9 +11,8 @@ import Contact from './pages/Contact'
 import SignIn from './pages/SignIn'
 import Payment from './pages/Payment'
 import Privacy from './pages/Privacy'
-import Viewcard from './pages/Viewcard'
+import Cart from './pages/Cart'
 import Title from './component/Title'
-import TermsCondition from './pages/TermsCondition'
 import Terms from './pages/Terms'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/custom-variants.css'
@@ -50,8 +49,6 @@ const PageWrapper = ({ children }) => {
         return 'Terms of Services';
       case '/privacy':
         return 'Privacy Policy';
-      case '/termscondition':
-        return 'Terms of Use';
       default:
         return 'Restaurant Name';
     }
@@ -70,7 +67,7 @@ function App() {
     <Router>
       <PageWrapper>
       <MainNavbar/>
-        <main className='header_space'>
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -80,11 +77,10 @@ function App() {
             <Route path="/recipe" element={<Recipe />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/viewcard" element={<Viewcard />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/privacy" element={<Privacy />} />
-            <Route path="/termscondition" element={<TermsCondition />} />
             <Route path="/terms" element={<Terms />} />
           </Routes>
         </main>

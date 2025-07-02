@@ -109,13 +109,11 @@
 
 /* Navbar Variants */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #2D3436;
+    color: var(--bs-white);
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -273,6 +271,38 @@ p,
     color: var(--bs-description);
 }
 
+
+.Inner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8));
+}
+
+.InnerHero {
+    min-height: 320px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--bs-tertiary);
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-tertiary);
+}
+
+.breadcrumb .breadcrumb-item.active {
+    color: var(--bs-white);
+}
+
 @media (min-width: 1200px) {
     .section-description {
         font-size: 1.35rem;
@@ -291,5 +321,10 @@ p,
     p,
     .p {
         font-size: 1.25rem;
+    }
+
+
+    .InnerHero {
+        min-height: 50dvh;
     }
 }

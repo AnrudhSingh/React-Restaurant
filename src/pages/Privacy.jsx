@@ -1,18 +1,21 @@
 import React from 'react';
-import { Container, Breadcrumb } from 'react-bootstrap';
+import Title from '../component/Title';
 import Footer from '../component/Footer';
-
+import InnerHero from "../component/InnerHero";
+import HeroBanner from '../assets/order_johen_redman.jpg';
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Privacy Policy" }
+];
 const Privacy = () => (
   <>
-    <section className="section-spacing bg-dark">
-      <Container>
-        <Breadcrumb className="mb-3">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item active>Privacy Policy</Breadcrumb.Item>
-        </Breadcrumb>
-        <h1 className="display-4 text-white fw-bold mb-2">Privacy Policy</h1>
-      </Container>
-    </section>
+    <Title title="Privacy Policy" />
+    <InnerHero
+      backgroundImage={HeroBanner}
+      title="Privacy Policy"
+      description="Your privacy matters to us. Learn how we collect, use, and protect your personal data to ensure a safe and secure browsing experience."
+      breadcrumbItems={breadcrumbItems}
+    />
     <Footer />
   </>
 );

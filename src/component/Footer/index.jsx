@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import HeaderLogo from '../../assets/logo.svg';
 import './Footer.css';
@@ -18,9 +18,9 @@ const Footer = () => (
           <p className="mb-4">Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi nibh nec et vulputate.</p>
           <h5 className="fw-semibold text-uppercase mb-3">Opening Restaurant</h5>
           <div className="footer-opening">
-            <p className='text-default mb-2'>Sa - We: 09:00am - 10:00pm</p>
-            <p className='text-default mb-2'>Thu - We: 09:00am - 10:00pm</p>
-            <p className='text-default mb-2'>Friday Closed</p>
+            <p className='text-default mb-2'>Monday - Friday: 09:00am - 10:00pm</p>
+            <p className='text-default mb-2'>Saturday - Sunday: 11:00 - 00:00</p>
+            <p className='text-default mb-2'>Friday: <span className='text-primary'>Closed</span></p>
           </div>
         </Col>
         <Col md={3}>
@@ -30,23 +30,22 @@ const Footer = () => (
             <li className='nav-item'><NavLink to="/about" end className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>About Us</NavLink></li>
             <li className='nav-item'><NavLink to="/menu" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Menu</NavLink></li>
             <li className='nav-item'><NavLink to="/order" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Order Delivery</NavLink></li>
-            <li className='nav-item'><NavLink to="/blog" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Blog</NavLink></li>
           </ul>
         </Col>
         <Col md={2}>
           <h5 className="fw-semibold text-uppercase mb-3">User Link</h5>
           <ul className="footer-links list-unstyled">
+            <li className='nav-item'><NavLink to="/blog" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Blog</NavLink></li>
             <li className='nav-item'><NavLink to="/recipe" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Recipe</NavLink></li>
             <li className='nav-item'><NavLink to="/shop" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Shop</NavLink></li>
             <li className='nav-item'><NavLink to="/contact" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Contact Us</NavLink></li>
             <li className='nav-item'><NavLink to="/payment" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Payment & Tax</NavLink></li>
-            <li className='nav-item'><NavLink to="/terms" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Terms of Services</NavLink></li>
           </ul>
         </Col>
         <Col md={3}>
           <h5 className="fw-semibold text-uppercase mb-3">Contact Us</h5>
           <Nav className="footer-contact flex-column mb-3">
-            <p className='mb-0'>543 Country Club Ave, <br /> NC 27587, London, UK</p>
+            <li className='p d-flex'><FaMapMarkerAlt className='text-primary mt-1 me-2' /><p className='mb-0'>543 Country Club Ave, <br /> NC 27587, London, UK</p></li>
             <li className='d-block'>
               <Nav.Link as={NavLink} to="tel:+1257 6541120" className='footer-desc text-decoration-underline text-primary px-0'>+1257 6541120</Nav.Link>
             </li>
@@ -63,9 +62,9 @@ const Footer = () => (
       <Row className="align-items-center">
         <Col md={6} className="footer-desc text-center text-md-start">©2025 ARR, All right reserved</Col>
         <Col md={6} className="text-center text-md-end">
-         <ul className="footer-links list-unstyled">
-            <li className='nav-item'><NavLink to="/Privacy" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Privacy Policy</NavLink></li>
-            <li className='nav-item'><NavLink to="/termscondition" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Terms of Use</NavLink></li>
+         <ul className="footer-links list-unstyled d-flex justify-content-end">
+            <li className='nav-item mb-0 me-3'><NavLink to="/Privacy" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Privacy Policy</NavLink></li>
+            <li className='nav-item mb-0'><NavLink to="/terms" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Terms of Services</NavLink></li>
          </ul>
         </Col>
       </Row>

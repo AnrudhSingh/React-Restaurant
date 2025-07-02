@@ -97,7 +97,7 @@ const Home = () => {
         </Container>
       </section>
       
-      <section className='section-spacing bg-dark'>
+      <section className='section-spacing pt-4 bg-dark'>
         <Container>
           <HorizontalContentImages
             subtitle="ABOUT US"
@@ -233,7 +233,7 @@ const Home = () => {
           <Row className='gy-4'>
             <div className="col-xl-4">
               <ProductCard
-                image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
+                image="https://images.unsplash.com/photo-1468577760773-139c2f1c335f"
                 title="Raspberry French Toast"
                 details="Time: 10 - 15 Minutes | Serves: 1"
                 price="12.50"
@@ -244,8 +244,8 @@ const Home = () => {
             </div>
             <div className="col-xl-4">
               <ProductCard
-                image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
-                title="Raspberry French Toast"
+                image="https://images.unsplash.com/photo-1648775271007-435bb750fb1b"
+                title="Healthy Fruits and Vegetables"
                 details="Time: 10 - 15 Minutes | Serves: 1"
                 price="12.50"
                 oldPrice="13.20"

@@ -3,18 +3,20 @@ import { Container, Breadcrumb } from 'react-bootstrap';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
-
+import InnerHero from "../component/InnerHero";
+import HeroBanner from '../assets/order_johen_redman.jpg';
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Order Delivery" }
+];
 const Order = () => (
   <>
-    <section className="section-spacing bg-dark">
-      <Container>
-        <Breadcrumb className="mb-3">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item active>Order Delivery</Breadcrumb.Item>
-        </Breadcrumb>
-        <h1 className="display-4 text-white fw-bold mb-2">Order Delivery</h1>
-      </Container>
-    </section>
+  <InnerHero
+      backgroundImage={HeroBanner}
+      title="Order Delivery"
+      description="Craving something delicious? Place your order online now! Fast, easy, and fresh — enjoy your favorite food delivered right to your door."
+      breadcrumbItems={breadcrumbItems}
+    />
     <Footer />
   </>
 );

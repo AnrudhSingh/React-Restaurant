@@ -2,10 +2,9 @@ import React from 'react';
 import './ProductCard.css';
 
 const ProductCard = ({ image, title, details, price, oldPrice, buttonText, onButtonClick }) => (
-  <div className="product-card-custom text-white rounded-4">
+  <div className="product-card-custom text-white rounded-4 h-100">
     <div className="ratio ratio-16x9">
         <img src={image} alt={title} className="rounded-4 object-fit-cover h-100 mb-3 w-100" />
-
     </div>
     <div className="product-card-body p-3 p-xl-4">
       <h5 className="product-card-title mb-0 fw-bold">{title}</h5>
