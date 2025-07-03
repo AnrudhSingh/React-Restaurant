@@ -5,7 +5,6 @@ import BannerSlider from '../component/BannerSlider';
 import Title from '../component/Title';
 import HorizontalContentImages from '../component/HorizontalContentImages';
 import SectionTitle from '../component/SectionTitle';
-import ServiceContent from '../component/ServiceContent'
 import coffeeHouse from '../assets/coffe_house.jpg';
 import qualityKava from '../assets/quality_kava.jpg';
 import qualityKava02 from '../assets/quality_kava_2.jpg';
@@ -45,7 +44,7 @@ const Home = () => {
       <section className="section-spacing bg-gradient-darkLight position-relative section-categories">
         <Container className='position-relative z-1'>
           <Row className="gx-3 gx-md-4 gy-4">
-            <div className="col-md-5">
+            <Col md={5}>
               <Banner
                 title="Reservations"
                 subtitle="Book your table online and enjoy a memorable dining experience"
@@ -56,8 +55,8 @@ const Home = () => {
                 height="medium"
                 className="h-100"
               />
-            </div>
-            <div className="col-md-7">
+            </Col>
+            <Col md={7}>
               <Banner
                 title="Special Events"
                 subtitle="Host your special occasions in our elegant venue"
@@ -68,8 +67,8 @@ const Home = () => {
                 height="medium"
                 className="h-100"
               />
-            </div>
-            <div className="col-md-7">
+            </Col>
+            <Col md={7}>
               <Banner
                 title="Our Menu"
                 subtitle="Discover our carefully crafted dishes made with the finest ingredients"
@@ -80,8 +79,8 @@ const Home = () => {
                 height="medium"
                 className="h-100"
               />
-            </div>
-            <div className="col-md-5">
+            </Col>
+            <Col md={5}>
               <Banner
                 title="Catering"
                 subtitle="Let us cater your next event with our premium catering services"
@@ -92,7 +91,7 @@ const Home = () => {
                 height="medium"
                 className="h-100"
               />
-            </div>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -142,53 +141,19 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className='section-spacing bg-gradient-darkLight'>
-        <Container>
-          <Row>
-            <div className='col-md-6 mx-auto text-white text-center'>
-                <SectionTitle
-                  subtitle="FEATURES"
-                  title="Why people choose us?"
-                  description="People choose us for fresh ingredients, flavorful dishes, and a warm, welcoming atmosphere that feels just like home."
-                />
-            </div>
-          </Row>
-          <Row className='gy-4'>
-            <div className='col-lg-4'>
-              <ServiceContent
-                title="Menu For Every Taste"
-                description="Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem."
-              />
-            </div>
-            <div className='col-lg-4'>
-              <ServiceContent
-                title="Always Qulity Beans"
-                description="Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem."
-              />
-            </div>
-            <div className='col-lg-4'>
-              <ServiceContent
-                title="Experienced Barista"
-                description="Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem."
-              />
-            </div>
-          </Row>
-        </Container>
-      </section>
-
       <section className='section-spacing bg-dark position-relative section-categories'>
         <Container className='position-relative z-1'>
           <Row>
-            <div className='col-md-8 mx-auto text-white text-center'>
+            <Col md={8} className='mx-auto text-white text-center'>
               <SectionTitle
                 subtitle="Testimonials"
                 title="What Our Customers Say"
                 description="Hear from our happy guests about their experiences at our restaurant."
               />
-            </div>
+            </Col>
           </Row>
           <Row>
-            <div className='col-xl-11 mx-auto'>
+            <Col xl={11} className='mx-auto'>
               <Testimonials
                 slides={[
                   {
@@ -214,7 +179,7 @@ const Home = () => {
                   }
                 ]}
               />
-            </div>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -222,16 +187,16 @@ const Home = () => {
       <section className='section-spacing bg-gradient-darkLight position-relative section-categories'>
         <Container className='position-relative z-1'>
           <Row>
-            <div className='col-md-8 mx-auto text-white text-center'>
+            <Col md={8} className='mx-auto text-white text-center'>
               <SectionTitle
                 subtitle="Recent Launch Items"
                 title="Explore Our Foods"
                 description="Hear from our happy guests about their experiences at our restaurant."
               />
-            </div>
+            </Col>
           </Row>
           <Row className='gy-4'>
-            <div className="col-xl-4">
+            <Col xl={4}>
               <ProductCard
                 image="https://images.unsplash.com/photo-1468577760773-139c2f1c335f"
                 title="Raspberry French Toast"
@@ -241,8 +206,8 @@ const Home = () => {
                 buttonText="Order Now"
                 onButtonClick={() => { /* handle order */ }}
               />
-            </div>
-            <div className="col-xl-4">
+            </Col>
+            <Col xl={4}>
               <ProductCard
                 image="https://images.unsplash.com/photo-1648775271007-435bb750fb1b"
                 title="Healthy Fruits and Vegetables"
@@ -252,8 +217,8 @@ const Home = () => {
                 buttonText="Order Now"
                 onButtonClick={() => { /* handle order */ }}
               />
-            </div>
-            <div className="col-xl-4">
+            </Col>
+            <Col xl={4}>
               <ProductCard
                 image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
                 title="Raspberry French Toast"
@@ -263,14 +228,14 @@ const Home = () => {
                 buttonText="Order Now"
                 onButtonClick={() => { /* handle order */ }}
               />
-            </div>
+            </Col>
           </Row>
         </Container>
       </section>
       <section className='section-spacing bg-dark'>
         <Container className='position-relative z-1'>
           <Row>
-            <div className='col-md-8 mx-auto text-white text-center'>
+            <Col md={8} className='mx-auto text-white text-center'>
               <SectionTitle
                 subtitle="NewsLetter"
                 title="Subscribe Our Newsletter"
@@ -281,7 +246,7 @@ const Home = () => {
                 <Form.Control type="email" placeholder="Type here..." className="rounded-start-2 rounded-end-0" />
                 <Button type="submit" className="btn btn-primary rounded-start-0 px-4">Subscribe</Button>
               </Form>
-            </div>
+            </Col>
           </Row>
         </Container>
       </section>

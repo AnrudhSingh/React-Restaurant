@@ -9,12 +9,12 @@ const breadcrumbItems = [
 ];
 const Terms = () => (
   <>
-  <InnerHero
-        backgroundImage={HeroBanner}
-        title="Terms of Services"
-        description="Review our terms and conditions to understand your rights, responsibilities, and how we ensure a safe, fair, and reliable service for all users."
-        breadcrumbItems={breadcrumbItems}
-      />
+    <InnerHero
+      backgroundImage={HeroBanner}
+      title="Terms of Services"
+      description="Review our terms and conditions to understand your rights, responsibilities, and how we ensure a safe, fair, and reliable service for all users."
+      breadcrumbItems={breadcrumbItems}
+    />
     <section className="section-spacing bg-dark">
       <Container>
         <Breadcrumb className="mb-3">
