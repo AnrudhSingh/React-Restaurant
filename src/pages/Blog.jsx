@@ -1,7 +1,5 @@
 import React from 'react';
-import { Container, Breadcrumb } from 'react-bootstrap';
-import PageTitle from '../component/PageTitle';
-import Title from '../component/Title';
+import { Container, Row, Col } from 'react-bootstrap';
 import Footer from '../component/Footer';
 import InnerHero from "../component/InnerHero";
 import HeroBanner from '../assets/blog_katie_musial.jpg';
@@ -17,6 +15,15 @@ const Blog = () => (
       description="Explore tasty recipes, cooking tips, food trends, and kitchen hacks. Our blog brings flavor, inspiration, and fun to every food lover's day!"
       breadcrumbItems={breadcrumbItems}
     />
+    <section className='section-spacing'>
+      <Container>
+        <Row>
+          <Col>
+            <p>Blog Post will be displayed here</p>
+          </Col>
+        </Row>
+      </Container>
+    </section>
     <Footer />
   </>
 );

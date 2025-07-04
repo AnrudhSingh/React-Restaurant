@@ -5,12 +5,13 @@ import BannerSlider from '../component/BannerSlider';
 import Title from '../component/Title';
 import HorizontalContentImages from '../component/HorizontalContentImages';
 import SectionTitle from '../component/SectionTitle';
-import coffeeHouse from '../assets/coffe_house.jpg';
-import qualityKava from '../assets/quality_kava.jpg';
-import qualityKava02 from '../assets/quality_kava_2.jpg';
 import Testimonials from '../component/Testimonials';
 import ProductCard from '../component/ProductCard';
 import Footer from '../component/Footer';
+
+import coffeeHouse from '../assets/coffe_house.jpg';
+import qualityKava from '../assets/quality_kava.jpg';
+import qualityKava02 from '../assets/quality_kava_2.jpg';
 
 const Home = () => {
   const sliderSlides = [
@@ -103,7 +104,7 @@ const Home = () => {
             title="We Invite You to Visit Our Coffee House"
             description="Step into our cozy coffee house and experience the perfect blend of rich aromas, warm ambiance, and handcrafted beverages. Whether you're here to catch up with friends, get some work done, or simply relax, we have the perfect cup waiting for you."
             buttonText="Read More"
-            buttonLink="/menu"
+            buttonLink="/about"
             imageSrc={coffeeHouse}
             imageAlt="About Us"
             reverse={false}
@@ -119,21 +120,21 @@ const Home = () => {
             reverse={true}
           />
           <HorizontalContentImages
-            subtitle="OUR TEAM"
+            subtitle="OUR Racipe"
             title="Use the Tips & Recipes of Our Barista"
             description="Discover expert tips and signature recipes straight from our barista to elevate your coffee-making skills at home. From brewing techniques to creative drink ideas, we'll help you craft café-quality coffee every time."
             buttonText="Read More"
-            buttonLink="/menu"
+            buttonLink="/recipe"
             imageSrc={qualityKava02}
             imageAlt="Our Team"
             reverse={false}
           />
           <HorizontalContentImages
-            subtitle="Fast Food"
+            subtitle="Fast Food Shop"
             title="Unraveling Fast Food Delights"
             description="Take a flavorful journey through the world of fast food—where bold tastes, quick bites, and culinary creativity come together. Explore the classics you love and the twists you didn't expect."
             buttonText="Read More"
-            buttonLink="/menu"
+            buttonLink="/shop"
             imageSrc="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
             imageAlt="Fast Food"
             reverse={true}

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Breadcrumb } from 'react-bootstrap';
-import PageTitle from '../component/PageTitle';
+import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../component/Title';
 import ProductSlider from '../component/ProductSlider';
 import Footer from '../component/Footer';

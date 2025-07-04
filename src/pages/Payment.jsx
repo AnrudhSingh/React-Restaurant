@@ -1,7 +1,5 @@
 import React from 'react';
-import { Container, Breadcrumb } from 'react-bootstrap';
-import PageTitle from '../component/PageTitle';
-import Title from '../component/Title';
+import { Container, Row, Col } from 'react-bootstrap';
 import Footer from '../component/Footer';
 import InnerHero from "../component/InnerHero";
 import HeroBanner from '../assets/payment_louis_hansel.jpg';
@@ -17,6 +15,15 @@ const Payment = () => (
       description="Learn about our secure payment methods, billing process, and applicable taxes. We ensure a smooth and transparent checkout experience every time."
       breadcrumbItems={breadcrumbItems}
     />
+    <section className='section-spacing'>
+      <Container>
+        <Row>
+          <Col>
+            <p>Payment page will be displayed here</p>
+          </Col>
+        </Row>
+      </Container>
+    </section>
     <Footer />
   </>
 );

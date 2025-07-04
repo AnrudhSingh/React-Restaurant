@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import PageTitle from '../component/PageTitle';
-import Title from '../component/Title';
 import SectionTitle from '../component/SectionTitle';
 import ServiceContent from '../component/ServiceContent';
 import Footer from '../component/Footer';
@@ -39,15 +37,17 @@ const Menu = () => (
       description="Discover our delicious menu filled with fresh flavors, signature dishes, and tasty treats made to satisfy every craving — there's something for everyone!"
       breadcrumbItems={breadcrumbItems}
     />
-    <section className="section-spacing bg-gradient-darkLight">
-      {Object.entries(groupedMenu).map(([key, section]) => (
-        <MenuSection
-          key={key}
-          subtitle={section.description}
-          title={section.title}
-          items={section.items}
-        />
-      ))}
+    <section className="section-spacing bg-gradient-darkLight section-categories position-relative">
+      <div className="position-relative z-1">
+        {Object.entries(groupedMenu).map(([key, section]) => (
+          <MenuSection
+            key={key}
+            subtitle={section.description}
+            title={section.title}
+            items={section.items}
+          />
+        ))}
+      </div>
     </section>
     
     <section className='section-spacing bg-dark'>

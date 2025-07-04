@@ -63,7 +63,7 @@ const Footer = () => (
         <Col md={6} className="footer-desc text-center text-md-start">©2025 ARR, All right reserved</Col>
         <Col md={6} className="text-center text-md-end">
          <ul className="footer-links list-unstyled d-flex justify-content-end">
-            <li className='nav-item mb-0 me-3'><NavLink to="/Privacy" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Privacy Policy</NavLink></li>
+            <li className='nav-item mb-0 me-3'><NavLink to="/privacy" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Privacy Policy</NavLink></li>
             <li className='nav-item mb-0'><NavLink to="/terms" className={({ isActive }) => 'nav-link px-0 text-decoration-none' + (isActive ? ' active' : '')}>Terms of Services</NavLink></li>
          </ul>
         </Col>
