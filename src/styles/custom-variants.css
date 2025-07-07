@@ -343,6 +343,17 @@ p,
     overflow-x: hidden;
 }
 
+.cardsocial {
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.testimonial-card:hover .cardsocial {
+    transition: all 0.3s ease;
+    opacity: 1;
+    margin-right: 12px !important;
+}
+
 @media (min-width: 1200px) {
     .section-description {
         font-size: 1.35rem;
